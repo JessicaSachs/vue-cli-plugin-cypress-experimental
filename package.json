@@ -1,7 +1,7 @@
 {
   "name": "vue-cli-plugin-cypress-experimental",
-  "version": "0.0.0",
-  "description": "Experimental: Cypress plugin for vue-cli",
+  "version": "0.0.1",
+  "description": "Experimental Cypress plugin for Vue CLI",
   "main": "index.js",
   "repository": {
     "type": "git",
