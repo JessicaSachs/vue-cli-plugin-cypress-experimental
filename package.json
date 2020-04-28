@@ -1,0 +1,32 @@
+{
+  "name": "vue-cli-plugin-cypress-experimental",
+  "version": "0.0.0",
+  "description": "Experimental: Cypress plugin for vue-cli",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "cypress",
+    "component testing"
+  ],
+  "author": "Jessica Sachs <jess@jessicasachs.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jessicsachs/vue-cli-plugin-cypress-experimental/issues"
+  },
+  "homepage": "https://github.com/jessicsachs/vue-cli-plugin-cypress-experimental#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vue/cli-shared-utils": "^4.3.1",
+    "eslint-plugin-cypress": "^2.10.3"
+  },
+  "peerDependencies": {
+    "@vue/cli-service": "^3.0.0 || ^4.0.0-0"
+  }
+}

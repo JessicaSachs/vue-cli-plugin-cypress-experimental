@@ -1,0 +1,7 @@
+{
+  "pluginsFile": "tests/plugins/index.js",
+  "supportFile": "tests/support/index.js",
+  "testFiles": "**/*.spec.js*",
+  "experimentalComponentTesting": true,
+  "componentFolder": "tests/components"
+}
