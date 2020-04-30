@@ -1,4 +1,4 @@
-# vue-cli-plugin-cypress-experimental
+# vue-cli-plugin-cypress-experimental 👩🏻‍🔬
 ️
 > Experimental Cypress Plugin, provides component testing among other feature flags
 
@@ -8,7 +8,17 @@
 
 ⚠️ Requires Cypress **v4.5.0** or later
 
-## Injected Commands
+## Installing in an Already Created Project 💎
+
+``` sh
+# Add it
+vue add cypress-experimental
+
+# Run it
+npm run test:component # yarn test:components
+```
+
+## Injected Commands ⚙️
 
 - **`vue-cli-service test:components`**
 
@@ -31,18 +41,12 @@
   Examples :
   - Run Cypress in headless mode for a specific file: `vue-cli-service test:component --headless --spec tests/components/specs/actions.spec.js`
 
-## Configuration
+## Configuration 🛠
 
 We've pre-configured Cypress to place most of the component testing related files under `<projectRoot>/tests/components`. You can also check out [how to configure Cypress via `cypress.json`](https://docs.cypress.io/guides/references/configuration.html#Options).
 
 To place the component tests sibling to your source files, just change the `componentFolder` option in your cypress.json file to point to the root of your source directory.
 
-## Environment Variables
+## Environment Variables 🌲
 
 Cypress doesn't load .env files for your test files the same way as `vue-cli` does for your [application code](https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code). Cypress supports a few ways to [define env variables](https://docs.cypress.io/guides/guides/environment-variables.html#) but the easiest one is to use .json files (either `cypress.json` or `cypress.env.json`) to define environment variables. Keep in mind those variables are accessible via `Cypress.env` function instead of regular `process.env` object.
-
-## Installing in an Already Created Project
-
-``` sh
-vue add cypress-experimental
-```
