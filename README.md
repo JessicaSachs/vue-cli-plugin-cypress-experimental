@@ -6,7 +6,7 @@
 
 ⚠️ This plugin and the features inside of it are experimental. We want to collect developer feedback, but they are not stable or fully-featured yet. Please read other experiments [here](https://docs.cypress.io/guides/references/experiments.html)
 
-⚠️ Requires Cypress 4.4.2 or later
+⚠️ Requires Cypress **v4.5.0** or later
 
 ## Injected Commands
 
