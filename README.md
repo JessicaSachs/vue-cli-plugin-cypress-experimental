@@ -1,10 +1,12 @@
 # vue-cli-plugin-cypress-experimental 👩🏻‍🔬
-️
+
+<p align="center">
+  <img src="./static/commands.gif" width="500px" alt="Terminal typing vue add cypress-experimental"/>
+</p>
+
 > Experimental Cypress Plugin, provides component testing among other feature flags
 
 [Cypress](https://www.cypress.io/) offers a rich interactive interface for running tests in the browser. This Vue plugin is a quick way to install experimental features like component testing. Find out more about component testing [here](https://docs.cypress.io/guides/references/experiments.html).
-
-<img src="./static/commands.gif" width="500px" alt="Terminal typing vue add cypress-experimental"/>
 
 ⚠️ This plugin and the features inside of it are experimental. We want to collect developer feedback, but they are not stable or fully-featured yet. Please read other experiments [here](https://docs.cypress.io/guides/references/experiments.html)
 
