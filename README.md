@@ -1,7 +1,7 @@
 # vue-cli-plugin-cypress-experimental 👩🏻‍🔬
 
 <p align="left">
-  <img src="./static/commands.gif" width="300px" alt="Terminal typing vue add cypress-experimental"/>
+  <img src="./static/commands.gif" width="450px" alt="Terminal typing vue add cypress-experimental"/>
 </p>
 
 > Experimental Cypress Plugin, provides component testing among other feature flags
