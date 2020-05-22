@@ -16,9 +16,9 @@
   "author": "Jessica Sachs <jess@jessicasachs.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jessicsachs/vue-cli-plugin-cypress-experimental/issues"
+    "url": "https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental/issues"
   },
-  "homepage": "https://github.com/jessicsachs/vue-cli-plugin-cypress-experimental#readme",
+  "homepage": "https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental#readme",
   "publishConfig": {
     "access": "public"
   },
