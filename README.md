@@ -1,4 +1,5 @@
 # vue-cli-plugin-cypress-experimental 👩🏻‍🔬
+[![ci status][ci image]][ci url]
 
 <p align="left">
   <img src="./static/commands.gif" width="450px" alt="Terminal typing vue add cypress-experimental"/>
@@ -55,3 +56,6 @@ To place the component tests sibling to your source files, just change the `comp
 ## Environment Variables 🌲
 
 Cypress doesn't load .env files for your test files the same way as `vue-cli` does for your [application code](https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code). Cypress supports a few ways to [define env variables](https://docs.cypress.io/guides/guides/environment-variables.html#) but the easiest one is to use .json files (either `cypress.json` or `cypress.env.json`) to define environment variables. Keep in mind those variables are accessible via `Cypress.env` function instead of regular `process.env` object.
+
+[ci image]: https://github.com/JessicaSachs/vue-cli-plugin-cypress-experimental/workflows/ci/badge.svg?branch=master
+[ci url]: https://github.com/JessicaSachs/vue-cli-plugin-cypress-experimental/actions
