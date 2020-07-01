@@ -1,0 +1,21 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2
+
+      - name: Install NPM dependencies 📦
+        uses: bahmutov/npm-install@v1
+
+      # it would be nice to run tests
+
+      # enable once we set release environment variables
+      # https://github.com/JessicaSachs/vue-cli-plugin-cypress-experimental/issues/5
+      # - name: Semantic Release 🚀
+      #   uses: cycjimmy/semantic-release-action@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
