@@ -1,11 +1,11 @@
 {
   "name": "vue-cli-plugin-cypress-experimental",
-  "version": "0.0.5",
+  "version": "0.0.0-development",
   "description": "Experimental Cypress plugin for Vue CLI",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental.git"
+    "url": "https://github.com/jessicasachs/vue-cli-plugin-cypress-experimental.git"
   },
   "keywords": [
     "vue",
@@ -28,5 +28,11 @@
   },
   "peerDependencies": {
     "@vue/cli-service": "^3.0.0 || ^4.0.0-0"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.1.1"
   }
 }
