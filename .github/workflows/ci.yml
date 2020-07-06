@@ -32,3 +32,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  # a job that checks if this plugin works
+  # by scaffolding a new project, adding this plugin
+  # then running component tests
+  test-components:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Scaffold component tests 🧪
+        run: |
+          cd /tmp
+          # scaffold the default Vue application using Vue CLI
+          npx --package @vue/cli vue create --default vue-test
+          # and install component tests
+          cd vue-test
+          vue add cypress-experimental
+          npx ls cypress
+          npx ls cypress-vue-unit-test
+          npx cypress run --spec 'tests/components/**/*'
+
