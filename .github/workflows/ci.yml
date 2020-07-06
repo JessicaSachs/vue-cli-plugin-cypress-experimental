@@ -43,9 +43,12 @@ jobs:
     steps:
       - name: Scaffold component tests 🧪
         run: |
+          node -v
+          npm -v
           cd /tmp
           # scaffold the default Vue application using Vue CLI
           npx --package @vue/cli vue create --default vue-test
+          cd vue-test
           # and install component tests
           npx --package @vue/cli vue add cypress-experimental
           npx ls cypress
