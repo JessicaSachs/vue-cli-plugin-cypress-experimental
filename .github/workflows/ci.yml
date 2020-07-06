@@ -45,7 +45,8 @@ jobs:
         run: |
           cd /tmp
           # scaffold the default Vue application using Vue CLI
-          npx --package @vue/cli vue create --default vue-test
+          npm i -g @vue/cli
+          vue create --default vue-test
           # and install component tests
           cd vue-test
           vue add cypress-experimental
