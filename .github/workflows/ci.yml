@@ -11,11 +11,11 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build NPM package 🏗
-        command: npm pack
+        run: npm pack
 
       # it would be nice to run tests
       - name: WIP Run E2E test 🧪
-        command: |
+        run: |
           cp ./vue-cli-plugin-cypress-experimental-0.0.0-development.tgz /tmp
           cd /tmp
           # scaffold the default Vue application using Vue CLI
