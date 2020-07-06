@@ -10,7 +10,22 @@ jobs:
       - name: Install NPM dependencies 📦
         uses: bahmutov/npm-install@v1
 
+      - name: Build NPM package 🏗
+        command: npm pack
+
       # it would be nice to run tests
+      - name: WIP Run E2E test 🧪
+        command: |
+          cp ./vue-cli-plugin-cypress-experimental-0.0.0-development.tgz /tmp
+          cd /tmp
+          # scaffold the default Vue application using Vue CLI
+          npx --package @vue/cli vue create --default vue-test
+          # and install component tests
+          cd vue-test
+          # vue add ../vue-cli-plugin-cypress-experimental-0.0.0-development.tgz
+          # unfortunately this does not work!!!
+          # $ vue add ~/git/vue-cli-plugin-cypress-experimental/vue-cli-plugin-cypress-experimental-0.0.0-development.tgz
+          # 📦  Installing vue-cli-plugin-/Users/gleb/git/vue-cli-plugin-cypress-experimental/vue-cli-plugin-cypress-experimental-0.0.0-development.tgz...
 
       - name: Semantic Release 🚀
         uses: cycjimmy/semantic-release-action@v2

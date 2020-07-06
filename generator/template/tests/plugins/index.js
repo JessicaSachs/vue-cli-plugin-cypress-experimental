@@ -1,10 +1,7 @@
-// default webpack file preprocessor is good for simple cases
-// Required to temporarily patch async components, chunking, and inline image loading
-const {
-  onFileDefaultPreprocessor
-} = require("cypress-vue-unit-test/dist/preprocessor/webpack");
-
+// https://github.com/bahmutov/cypress-vue-unit-test#install
+const preprocessor = require('cypress-vue-unit-test/dist/plugins/webpack');
 module.exports = (on, config) => {
-  on("file:preprocessor", onFileDefaultPreprocessor(config));
+  preprocessor(on, config);
+  // IMPORTANT return the config object
   return config
 };
