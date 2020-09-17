@@ -8,8 +8,7 @@ describe('Greetings', () => {
 
     // now we can use any Cypress command to interact with the component
     // https://on.cypress.io/api
-    cy.get('[data-testid=title]').should('exist')
-      .and('contain', 'Hello world')
+    cy.get('[data-testid=title]').should('exist').and('contain', 'Hello world')
   })
 
   it('renders the name passed in', () => {
