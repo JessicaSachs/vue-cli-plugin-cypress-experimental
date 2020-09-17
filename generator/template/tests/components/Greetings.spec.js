@@ -20,8 +20,6 @@ describe('Greetings', () => {
       }
     })
 
-    // now we can use any Cypress command to interact with the component
-    // https://on.cypress.io/api
     cy.get('[data-testid=title]').should('contain', `Hello ${name}`)
   })
 })
