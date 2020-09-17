@@ -52,7 +52,7 @@ jobs:
           # and install component tests
           VUE_CLI_SKIP_DIRTY_GIT_PROMPT=1 npx --package @vue/cli vue add cypress-experimental
           npm ls cypress
-          npm ls cypress-vue-unit-test
+          npm ls @cypress/vue
           echo "Running component tests"
           npx cypress run --spec 'tests/components/**/*'
 

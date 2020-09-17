@@ -14,10 +14,14 @@
 // ***********************************************************
 
 // Component Testing resets
-require('cypress-vue-unit-test/dist/support')
+require('@cypress/vue/dist/support')
 
 // Import commands.js using ES2015 syntax:
 // import './commands'
 
 // Alternatively you can use CommonJS syntax:
 require('./commands')
+
+
+// Import any global stylesheets here
+// require('../../src/styles/index.scss') // 💅

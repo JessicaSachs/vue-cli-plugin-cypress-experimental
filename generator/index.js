@@ -7,7 +7,7 @@ module.exports = api => {
   api.extendPackage({
     devDependencies: {
       'cypress': '*',
-      'cypress-vue-unit-test': '3'
+      '@cypress/vue': '*'
     },
     scripts: {
       'test:components': 'vue-cli-service test:components'
